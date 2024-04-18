@@ -1,0 +1,114 @@
+.background {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    height: 120vh;
+}
+
+.container {
+    padding-top: 120px;
+}
+
+.card-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-top: -15px;
+}
+  
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    color: #6643b5;
+}
+
+label {
+    font-weight: normal;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+  
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    max-width: 500px !important;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.text-danger {
+    color: red;
+    font-size: 12px;
+}
+  
+.btn-primary {
+    background-color: #6643b5;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    width: 400px;
+}
+  
+.btn-primary:hover {
+    background-color: #8594e4;
+}
+  
+.form-check-label {
+    font-weight: normal;
+}
+
+.card-container p {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.card-container p a {
+    color: #6643b5;
+    text-decoration: none;
+}
+
+.login-link {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #6643b5;
+}
+
+.success-message {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}  

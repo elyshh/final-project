@@ -1,0 +1,19 @@
+<div class="product-table">
+    <table>
+        <ng-container *ngFor="let product of products; let i = index">
+            <tr *ngIf="i % 3 === 0">
+                <ng-container *ngFor="let product of products.slice(i, i + 3)">
+                    <td>
+                        <div class="product-card">
+                            <a [routerLink]="['/product', product.id]">
+                                <img [src]="product.image" alt="Product Image">
+                                <h3>{{ product.title }}</h3>
+                                <p>Price: ${{ product.price }}</p>
+                            </a>
+                        </div>
+                    </td>
+                </ng-container>
+            </tr>
+        </ng-container>
+    </table>
+</div>

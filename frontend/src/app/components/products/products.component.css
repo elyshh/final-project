@@ -1,0 +1,22 @@
+.product-table {
+    margin-top: 60px;
+    margin-left: 170px;
+    margin-right: auto;
+}
+
+.product-card {
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+.product-table img {
+    aspect-ratio: auto !important;
+    max-height: 250px !important;
+    max-width: 300px !important;
+    padding-left: 100px !important;
+    padding-bottom: 10px !important;
+}
+
+.product-card h3 {
+    font-size: 20px;
+}

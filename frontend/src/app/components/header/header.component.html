@@ -1,0 +1,28 @@
+<div class="header">
+    <img src="/assets/logo.png" alt="Logo" class="logo">
+</div>
+
+<div class="banner"></div>
+
+<app-searchform></app-searchform>
+
+<div class="background">
+    <div class="user-dropdown">
+        <button class="dropdown-btn" (click)="toggleDropdown()">▼</button>
+        <div class="dropdown-content" [class.show]="showDropdown">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/cart">Cart</a>
+            <a href="#" (click)="logout()">Logout</a>
+            
+        </div>
+            
+        <span>Welcome, {{ username }}</span>
+        <img src="assets/profile.png" alt="Profile" class="profile-image">
+    </div>
+
+    <ng-content></ng-content>
+
+</div>
+
+
+  

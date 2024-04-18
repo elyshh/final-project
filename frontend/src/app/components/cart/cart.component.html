@@ -1,0 +1,34 @@
+<app-header>
+    <div class="cart">
+        <h2>Ready to Check Out?</h2>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Loop through each item in the cart and display its details -->
+            <tr *ngFor="let item of cart; let i = index">
+              <td><img [src]="item.product.image" alt="Product Image" class="product-image"></td>
+              <td>{{ item.product.title }}</td>
+              <td>{{ item.product.price | currency }}</td>
+              <td>
+                <button (click)="decrementQuantity(item)">-</button>
+                {{ item.quantity }}
+                <button (click)="incrementQuantity(item)">+</button>
+              </td>
+              <td>{{ item.product.price * item.quantity | currency }}</td>
+              <td><button (click)="removeItem(i)">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div *ngIf="cart.length === 0">Your cart is empty</div>
+        <div class="cart-total">Total: {{ total | currency }}</div>
+    </div>
+</app-header>

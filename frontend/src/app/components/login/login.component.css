@@ -1,0 +1,107 @@
+.background {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    height: 96vh;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check-input:checked {
+    background-color: #6643b5;
+    border-color: #6643b5;
+}
+
+.remember-forgot-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.forgot-password-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.container {
+    padding-top: 120px;
+}
+
+.card-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: white;
+}
+
+h2, p {
+    margin-bottom: 3px;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #6643b5;
+}
+
+p {
+    text-align: center;
+    color: gray;
+    padding-bottom: 30px;
+}
+
+label {
+    font-weight: normal;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #6643b5;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    width: 400px;
+}
+
+.btn-primary:hover {
+    background-color: #8594e4;
+}
+
+.register-link {
+    padding-top: 30px;
+    margin-bottom: -35px;
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
+
+.sign-up-link {
+    color: #6643b5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-container {
+    position: absolute;
+    top: 485px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+}

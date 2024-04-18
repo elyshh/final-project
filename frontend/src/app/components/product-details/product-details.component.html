@@ -1,0 +1,25 @@
+<app-layout>
+    <table class="product-table" *ngIf="product">
+        <tr>
+            <td class="image-column">
+                <img [src]="product.image" alt="Product Image">
+            </td>
+            <td class="details-column">
+                <h2>{{ product.title }}</h2>
+                <p>Price: ${{ product.price }}</p>
+                <p>Description: {{ product.description }}</p>
+                <p>Category: {{ product.category }}</p>
+                <p>Rating: {{ product.rating.rate }} ({{ product.rating.count }} reviews)</p>
+
+                <div class="quantity-control">
+                    <button (click)="decrementQuantity()">-</button>
+                    <span>{{ quantity }}</span>
+                    <button (click)="incrementQuantity()">+</button>
+                </div>
+                <p></p>
+
+                <button (click)="addToCart(product)">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+</app-layout>

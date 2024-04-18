@@ -1,0 +1,44 @@
+.product-table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.image-column, .details-column {
+    padding: 50px;
+    vertical-align: middle; 
+}
+
+.image-column {
+    width: 30%;
+}
+
+.details-column {
+    width: 70%;
+}
+
+.image-column img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.details-column p {
+    margin-top: 0; 
+    white-space: normal;
+    max-width: 60%;
+    word-wrap: break-word;
+    line-height: 1.5; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.quantity-control {
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+.quantity-control button {
+    margin-right: 10px;
+    margin-left: 10px;
+}

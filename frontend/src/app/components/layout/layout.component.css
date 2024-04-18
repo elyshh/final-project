@@ -1,0 +1,19 @@
+.categories-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 95px;
+}
+
+.categories span {
+    cursor: pointer;
+    /* text-transform: uppercase; Capitalize all text */
+    font-size: 14px;
+}

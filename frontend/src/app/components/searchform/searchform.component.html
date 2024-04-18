@@ -1,0 +1,12 @@
+<div class="search-container">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="query" placeholder="Enter search here">
+      <button type="submit">Search</button>
+    </form>
+    <div class="filtered-products">
+      <div *ngFor="let product of filteredProducts">
+        <p>{{ product.title }}</p>
+      </div>
+    </div>
+  </div>
+  

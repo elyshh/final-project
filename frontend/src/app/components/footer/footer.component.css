@@ -1,0 +1,18 @@
+.footer {
+    position: fixed; /* Fix footer at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00043C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+}
+
+.footer-content {
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
